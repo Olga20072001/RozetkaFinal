@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using EPAM_LAb_Rozetka.Decorator;
+using OpenQA.Selenium;
 using System;
 
 namespace EPAM_LAb_Rozetka.PageObject.Pages
@@ -9,11 +10,13 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         private readonly By totalSum = By.XPath("//div[@class='cart-receipt__sum-price']//span[not(@class)]");
 
+        public TextDecorator totalSumText => new TextDecorator(driver.FindElement(totalSum));
+
         public double GetTotalSumFromPage()
         {
             WaitUntilPageLoad();
             WaitUntilElementExists(totalSum);
-            string sum = driver.FindElement(totalSum).Text;
+            string sum = totalSumText.Text;
             return Convert.ToDouble(sum);
         }
     }

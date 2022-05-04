@@ -6,7 +6,7 @@ using System;
 
 namespace EPAM_LAb_Rozetka.Tests
 {
-    [Parallelizable(scope: ParallelScope.All)]
+    //[Parallelizable(scope: ParallelScope.All)]
     public class CheckSumInTheCartTest:BaseTest
     {
         [TestCaseSource(typeof(DataProvider), nameof(DataProvider.TestData))]

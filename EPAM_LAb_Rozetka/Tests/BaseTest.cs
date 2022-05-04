@@ -3,10 +3,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 
-[assembly: LevelOfParallelism(3)]
+//[assembly: LevelOfParallelism(3)]
 namespace EPAM_LAb_Rozetka.Tests
 {
-    [FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
+    //[FixtureLifeCycle(LifeCycle.InstancePerTestCase)]
     public class BaseTest
     {
         public IWebDriver driver;

@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
 using System.Linq;
+using EPAM_LAb_Rozetka.Decorator;
 
 namespace EPAM_LAb_Rozetka.PageObject.Pages
 {
@@ -14,26 +15,28 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
         private readonly By orderBySelect = By.XPath("//select[contains(@class,'select-css')]");
         private readonly By itemList = By.XPath("//a[@class='goods-tile__picture ng-star-inserted']");
 
+        public SendKeysDecorator sendKeysBrandSearchField => new SendKeysDecorator(driver.FindElement(brandSearchField));
+
         public void SearchBrandName(string filterName)
         {
             WaitUntilPageLoad();
             WaitUntilElementExists(brandSearchField);
-            driver.FindElement(brandSearchField, timeToWait).SendKeys(filterName);
+            sendKeysBrandSearchField.SendKeys(filterName);
             CheckButtonChecked(filterName);
         }
 
         public void CheckButtonChecked(string filterName)
         {
-            IList<IWebElement> brandList = driver.FindElements(brandFilter, timeToWait);
+            IList<IWebElement> brandList = driver.FindElements(brandFilter);
             for (int i = 0; i < brandList.Count; i++)
             {
                 WaitUntilElementExists(brandFilter);
-                brandList = driver.FindElements(brandFilter, timeToWait);
+                brandList = driver.FindElements(brandFilter);
                 string Value = brandList.ElementAt(i).GetAttribute("data-id");
                 if (Value.Equals(filterName))
                 {
                     WaitUntilElementExists(brandFilter);
-                    brandList = driver.FindElements(brandFilter, timeToWait);
+                    brandList = driver.FindElements(brandFilter);
                     brandList.ElementAt(i).Click();
                     break;
                 }
