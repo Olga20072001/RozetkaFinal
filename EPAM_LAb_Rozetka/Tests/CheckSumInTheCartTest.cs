@@ -6,27 +6,39 @@ using System;
 
 namespace EPAM_LAb_Rozetka.Tests
 {
-    //[Parallelizable(scope: ParallelScope.All)]
+    [Parallelizable(scope: ParallelScope.All)]
     public class CheckSumInTheCartTest:BaseTest
     {
+
         [TestCaseSource(typeof(DataProvider), nameof(DataProvider.TestData))]
         public void CheckSumInTheCart(Product product)
         {
-            HomePage homePage = new HomePage(driver);
-            homePage.SearchByKeyword(product.searchProduct);
+            logger.Info("'CheckSumInTheCart' test start");
+            logger.Info($"Search Product: { product.searchProduct}, Brand: {product.brand}, Product Index {product.productIndex}, Price: {product.price}");
+            try
+            {
+                HomePage homePage = new HomePage(driver);
+                homePage.SearchByKeyword(product.searchProduct);
 
-            SearchResultPage searchResultPage = new SearchResultPage(driver);
-            searchResultPage.SearchBrandName(product.brand);
-            searchResultPage.OrderBy();
-            searchResultPage.getItemByIndex(product.productIndex);
+                SearchResultPage searchResultPage = new SearchResultPage(driver);
+                searchResultPage.SearchBrandName(product.brand);
+                searchResultPage.OrderBy();
+                searchResultPage.getItemByIndex(product.productIndex);
 
-            ProductPage productPage = new ProductPage(driver);
-            productPage.ClickBuyButton();
-            productPage.ClickCartButton();
+                ProductPage productPage = new ProductPage(driver);
+                productPage.ClickBuyButton();
+                productPage.ClickCartButton();
 
-            CartPage cartPage = new CartPage(driver);
+                CartPage cartPage = new CartPage(driver);
 
-            Assert.Greater(cartPage.GetTotalSumFromPage(), Convert.ToDouble(product.price));
+                Assert.Greater(cartPage.GetTotalSumFromPage(), Convert.ToDouble(product.price));
+
+                logger.Info("Test finished");
+            }
+            catch(Exception e)
+            {
+                logger.Error(e.Message.ToString());
+            }
         }
     }
 }
