@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+	<ProductsList>
+		<Product>
+			<searchProduct>Laptop</searchProduct>
+			<brand>HP</brand>
+			<productIndex>0</productIndex>
+			<price>50000</price>
+		</Product>
+		<Product>
+			<searchProduct>TV</searchProduct>
+			<brand>Samsung</brand>
+			<productIndex>0</productIndex>
+			<price>10000</price>
+		</Product>
+		<Product>
+			<searchProduct>Telephone</searchProduct>
+			<brand>Samsung</brand>
+			<productIndex>0</productIndex>
+			<price>8000</price>
+		</Product>
+		<Product>
+			<searchProduct>Tablet</searchProduct>
+			<brand>Lenovo</brand>
+			<productIndex>0</productIndex>
+			<price>10000</price>		
+		</Product>
+		<Product>
+			<searchProduct>Monitor</searchProduct>
+			<brand>ASUS</brand>
+			<productIndex>0</productIndex>
+			<price>20000</price>		
+		</Product>
+	
+</ProductsList>
+</Products>
+
