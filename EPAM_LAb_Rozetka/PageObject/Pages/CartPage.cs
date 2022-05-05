@@ -14,7 +14,6 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         public double GetTotalSumFromPage()
         {
-            WaitUntilPageLoad();
             WaitUntilElementExists(totalSum);
             string sum = totalSumText.Text;
             return Convert.ToDouble(sum);

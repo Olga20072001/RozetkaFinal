@@ -8,16 +8,16 @@
 			<price>50000</price>
 		</Product>
 		<Product>
-			<searchProduct>TV</searchProduct>
-			<brand>Samsung</brand>
+			<searchProduct>USB</searchProduct>
+			<brand>ADATA</brand>
 			<productIndex>0</productIndex>
 			<price>10000</price>
 		</Product>
 		<Product>
-			<searchProduct>Telephone</searchProduct>
-			<brand>Samsung</brand>
+			<searchProduct>SSD</searchProduct>
+			<brand>Apacer</brand>
 			<productIndex>0</productIndex>
-			<price>8000</price>
+			<price>800</price>
 		</Product>
 		<Product>
 			<searchProduct>Tablet</searchProduct>

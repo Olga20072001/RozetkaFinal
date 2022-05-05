@@ -13,6 +13,7 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         public ClickDecorator clickSearchButton => new ClickDecorator(driver.FindElement(searchButton));
         public SendKeysDecorator sendKeysInSearchField => new SendKeysDecorator(driver.FindElement(searchField));
+
         public SearchResultPage SearchByKeyword(string keyword)
         {
             sendKeysInSearchField.SendKeys(keyword);

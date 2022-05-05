@@ -9,9 +9,12 @@ namespace EPAM_LAb_Rozetka.Decorator
 {
     public abstract class WebElementDecorator : IWebElement
     {
+        protected IWebDriver driver;
         protected IWebElement element;
+        protected By by;
+        public WebElementDecorator(IWebElement element, IWebDriver driver) { this.element = element; this.driver = driver; }
+        public WebElementDecorator(IWebDriver driver, By by) {this.driver = driver; this.by = by; }
         public WebElementDecorator(IWebElement element) { this.element = element; }
-
 
         public virtual string Text => element.Text;
         public virtual void Clear()

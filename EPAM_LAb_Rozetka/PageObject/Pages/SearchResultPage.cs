@@ -19,7 +19,6 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         public void SearchBrandName(string filterName)
         {
-            WaitUntilPageLoad();
             WaitUntilElementExists(brandSearchField);
             sendKeysBrandSearchField.SendKeys(filterName);
             CheckButtonChecked(filterName);
@@ -45,7 +44,6 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         public void OrderBy()
         {
-            WaitUntilPageLoad();
             IWebElement selectObj = driver.FindElement(orderBySelect);
             selectObj.Click();
             var selectObject = new SelectElement(selectObj);
@@ -54,7 +52,6 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         public ProductPage getItemByIndex(int index)
         {
-            WaitUntilPageLoad();
             WaitUntilElementExists(itemList);
             driver.FindElements(itemList).ElementAt(index).Click();
             return new ProductPage(driver);

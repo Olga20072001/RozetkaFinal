@@ -15,7 +15,6 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
 
         public void ClickBuyButton()
         {
-            WaitUntilPageLoad();
             WaitUntilElementExists(buyButton);
             clickBuyButton.Click();
         }
