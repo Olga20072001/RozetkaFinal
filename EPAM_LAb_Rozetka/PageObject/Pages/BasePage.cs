@@ -3,6 +3,7 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace EPAM_LAb_Rozetka.PageObject
 {
@@ -29,15 +30,16 @@ namespace EPAM_LAb_Rozetka.PageObject
 
         public void WaitUntilElementExists(By element)
         {
+            Thread.Sleep(2000);
             new WebDriverWait(driver, TimeSpan.FromSeconds(timeToWait)).Until(ExpectedConditions.ElementExists(element));
         }
-
     }
 
     public static class WebDriverExtensions
     {
         public static IWebElement FindElement(this IWebDriver driver, By by, long timeToWait)
         {
+            Thread.Sleep(1000);
             if (timeToWait > 0)
             {
                 try
@@ -55,6 +57,7 @@ namespace EPAM_LAb_Rozetka.PageObject
         }
         public static IList<IWebElement> FindElements(this IWebDriver driver, By by, long timeToWait)
         {
+            Thread.Sleep(1000);
             if (timeToWait > 0)
             {
                 try

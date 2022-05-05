@@ -50,10 +50,10 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
             selectObject.SelectByValue("2: expensive");
         }
 
-        public ProductPage getItemByIndex(int index)
+        public ProductPage getProductByIndex(int index)
         {
             WaitUntilElementExists(itemList);
-            driver.FindElements(itemList).ElementAt(index).Click();
+            driver.FindElements(itemList,timeToWait).ElementAt(index).Click();
             return new ProductPage(driver);
         }
 

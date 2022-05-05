@@ -15,22 +15,26 @@ namespace EPAM_LAb_Rozetka.Tests
         {
             logger.Info("'CheckSumInTheCart' test start");
             logger.Info($"Search Product: { product.searchProduct}, Brand: {product.brand}, Product Index {product.productIndex}, Price: {product.price}");
-                HomeObject homeObject = new HomeObject(driver);
-                SearchResultObject searchResultObject = new SearchResultObject(driver);
-                ProductObject productObject = new ProductObject(driver);
-                CartObject cartObject = new CartObject(driver);
+            HomeObject homeObject = new HomeObject(driver);
+            SearchResultObject searchResultObject = new SearchResultObject(driver);
+            ProductObject productObject = new ProductObject(driver);
+            CartObject cartObject = new CartObject(driver);
+            double currentSum=0;
             try
             {
                 homeObject.SearchByKeyword(product.searchProduct);
                 searchResultObject.GetProduct(product.brand, product.productIndex);
                 productObject.BuyProduct();
-                Assert.Greater(cartObject.GetTotalSumFromPage(), Convert.ToDouble(product.price));
-
-                logger.Info("Test finished");
+                currentSum = cartObject.GetTotalSumFromPage();
             }
             catch(Exception e)
             {
                 logger.Error(DateTime.Now.ToString() + "\n" + e.Message.ToString() + e.TargetSite.Name.ToString());
+            }
+            finally
+            {
+                Assert.Greater(currentSum, Convert.ToDouble(product.price));
+                logger.Info("Test finished");
             }
         }
     }

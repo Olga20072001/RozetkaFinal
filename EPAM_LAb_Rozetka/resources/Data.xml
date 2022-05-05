@@ -7,7 +7,7 @@
 			<productIndex>0</productIndex>
 			<price>50000</price>
 		</Product>
-		<Product>
+		<!--<Product>
 			<searchProduct>USB</searchProduct>
 			<brand>ADATA</brand>
 			<productIndex>0</productIndex>
@@ -30,7 +30,7 @@
 			<brand>ASUS</brand>
 			<productIndex>0</productIndex>
 			<price>20000</price>		
-		</Product>
+		</Product>-->
 	
 </ProductsList>
 </Products>

@@ -13,7 +13,7 @@ namespace EPAM_LAb_Rozetka.BusinessObject
         {
             searchResultPage.SearchBrandName(filterName);
             searchResultPage.OrderBy();
-            searchResultPage.getItemByIndex(index);
+            searchResultPage.getProductByIndex(index);
         }
     }
 }
