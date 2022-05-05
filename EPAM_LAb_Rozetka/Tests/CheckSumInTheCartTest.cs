@@ -10,7 +10,7 @@ namespace EPAM_LAb_Rozetka.Tests
     public class CheckSumInTheCartTest:BaseTest
     {
 
-        [TestCaseSource(typeof(DataProvider), nameof(DataProvider.TestData))]
+        [TestCaseSource(typeof(DataProvider), nameof(DataProvider.GetData))]
         public void CheckSumInTheCart(Product product)
         {
             logger.Info("'CheckSumInTheCart' test start");

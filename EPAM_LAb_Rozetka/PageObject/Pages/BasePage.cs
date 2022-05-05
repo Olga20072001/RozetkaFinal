@@ -22,15 +22,9 @@ namespace EPAM_LAb_Rozetka.PageObject
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(timeToWait);
         }
 
-        public void WaitUntilPageLoad()
-        {
-            new WebDriverWait(driver, TimeSpan.FromMilliseconds(timeToWait));
-            wait.Until(driver => ((IJavaScriptExecutor)driver).ExecuteScript("return document.readyState").Equals("complete"));
-        }
-
         public void WaitUntilElementExists(By element)
         {
-            Thread.Sleep(2000);
+            //Thread.Sleep(2000);
             new WebDriverWait(driver, TimeSpan.FromSeconds(timeToWait)).Until(ExpectedConditions.ElementExists(element));
         }
     }
@@ -39,7 +33,6 @@ namespace EPAM_LAb_Rozetka.PageObject
     {
         public static IWebElement FindElement(this IWebDriver driver, By by, long timeToWait)
         {
-            Thread.Sleep(1000);
             if (timeToWait > 0)
             {
                 try
@@ -57,7 +50,6 @@ namespace EPAM_LAb_Rozetka.PageObject
         }
         public static IList<IWebElement> FindElements(this IWebDriver driver, By by, long timeToWait)
         {
-            Thread.Sleep(1000);
             if (timeToWait > 0)
             {
                 try

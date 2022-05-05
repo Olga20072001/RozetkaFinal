@@ -24,6 +24,22 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
             CheckButtonChecked(filterName);
         }
 
+        public void OrderBy()
+        {
+            IWebElement selectObj = driver.FindElement(orderBySelect);
+            selectObj.Click();
+            var selectObject = new SelectElement(selectObj);
+            selectObject.SelectByValue("2: expensive");
+        }
+
+        public ProductPage getProductByIndex(int index)
+        {
+            WaitUntilElementExists(itemList);
+            driver.FindElements(itemList,timeToWait).ElementAt(index).Click();
+            return new ProductPage(driver);
+        }
+
+
         public void CheckButtonChecked(string filterName)
         {
             IList<IWebElement> brandList = driver.FindElements(brandFilter);
@@ -41,21 +57,5 @@ namespace EPAM_LAb_Rozetka.PageObject.Pages
                 }
             }
         }
-
-        public void OrderBy()
-        {
-            IWebElement selectObj = driver.FindElement(orderBySelect);
-            selectObj.Click();
-            var selectObject = new SelectElement(selectObj);
-            selectObject.SelectByValue("2: expensive");
-        }
-
-        public ProductPage getProductByIndex(int index)
-        {
-            WaitUntilElementExists(itemList);
-            driver.FindElements(itemList,timeToWait).ElementAt(index).Click();
-            return new ProductPage(driver);
-        }
-
     }
 }

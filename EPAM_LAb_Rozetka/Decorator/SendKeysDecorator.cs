@@ -8,7 +8,6 @@ namespace EPAM_LAb_Rozetka.Decorator
 
         public override void SendKeys(string text)
         {
-            base.Clear();
             base.SendKeys(text);
         }
     }

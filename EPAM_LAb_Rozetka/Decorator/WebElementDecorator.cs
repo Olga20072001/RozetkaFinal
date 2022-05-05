@@ -17,10 +17,6 @@ namespace EPAM_LAb_Rozetka.Decorator
         public WebElementDecorator(IWebElement element) { this.element = element; }
 
         public virtual string Text => element.Text;
-        public virtual void Clear()
-        {
-            element.Clear();
-        }
 
         public virtual void Click()
         {
@@ -45,6 +41,11 @@ namespace EPAM_LAb_Rozetka.Decorator
         public IWebElement FindElement(By by)
         {
             throw new NotImplementedException();
+        }
+
+        public virtual void Clear()
+        {
+            element.Clear();
         }
 
         public ReadOnlyCollection<IWebElement> FindElements(By by)
