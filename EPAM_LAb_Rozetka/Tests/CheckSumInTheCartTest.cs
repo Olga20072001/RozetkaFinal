@@ -13,6 +13,7 @@ namespace EPAM_LAb_Rozetka.Tests
         [TestCaseSource(typeof(DataProvider), nameof(DataProvider.GetData))]
         public void CheckSumInTheCart(Product product)
         {
+            test = extend.CreateTest("CheckSumInTheCart");
             logger.Info("'CheckSumInTheCart' test start");
             logger.Info($"Search Product: { product.searchProduct}, Brand: {product.brand}, Product Index {product.productIndex}, Price: {product.price}");
             HomeObject homeObject = new HomeObject(driver);
@@ -26,15 +27,20 @@ namespace EPAM_LAb_Rozetka.Tests
                 searchResultObject.GetProduct(product.brand, product.productIndex);
                 productObject.BuyProduct();
                 currentSum = cartObject.GetTotalSumFromPage();
+
             }
             catch(Exception e)
             {
+                test.Fail($"Test failed with parameters {product.searchProduct} , {product.productIndex}");
+                test.Fail(e.Message);
+                test.Fail(e.Source);
+                test.Fail(e.StackTrace);
                 logger.Error(DateTime.Now.ToString() + "\n" + e.Message.ToString() + e.TargetSite.Name.ToString());
             }
             finally
             {
                 Assert.Greater(currentSum, Convert.ToDouble(product.price));
-                logger.Info("Test finished");
+                test.Pass($"Test passed with parameters{product.searchProduct} , {product.productIndex}");
             }
         }
     }

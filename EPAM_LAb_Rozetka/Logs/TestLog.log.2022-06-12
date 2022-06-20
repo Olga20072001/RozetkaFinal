@@ -1,0 +1,91 @@
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Laptop, Brand: HP, Product Index 0, Price: 50000
+ERROR ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:44:07
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Laptop, Brand: HP, Product Index 0, Price: 50000
+ERROR ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:46:36
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: SSD, Brand: Apacer, Product Index 0, Price: 800
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Laptop, Brand: HP, Product Index 0, Price: 50000
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: USB, Brand: ADATA, Product Index 0, Price: 10000
+ERROR ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:55:37
+element click intercepted: Element <a apprzroute="" class="goods-tile__picture ng-star-inserted" href="https://hard.rozetka.com.ua/ua/apacer_ap480gast280_1/p91163390/">...</a> is not clickable at point (402, 454). Other element would receive the click: <main rzspinner="" spinnertype="element" spinnerid="LOAD_PAGE_DATA" style="order: 2;" class="ng-star-inserted preloader_type_element">...</main>
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+ERROR ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:55:37
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+ERROR ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:55:37
+element click intercepted: Element <select _ngcontent-rz-client-c175="" class="select-css ng-untouched ng-pristine ng-valid ng-star-inserted">...</select> is not clickable at point (1285, 16). Other element would receive the click: <ul _ngcontent-rz-client-c105="" class="header-actions">...</ul>
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Monitor, Brand: ASUS, Product Index 0, Price: 20000
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Tablet, Brand: Lenovo, Product Index 0, Price: 10000
+ERROR ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:56:45
+element click intercepted: Element <select _ngcontent-rz-client-c175="" class="select-css ng-untouched ng-pristine ng-valid ng-star-inserted">...</select> is not clickable at point (1285, 16). Other element would receive the click: <ul _ngcontent-rz-client-c105="" class="header-actions">...</ul>
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+ERROR ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 16:56:49
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Monitor, Brand: ASUS, Product Index 0, Price: 20000
+ERROR ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 17:02:05
+element click intercepted: Element <select _ngcontent-rz-client-c175="" class="select-css ng-untouched ng-pristine ng-valid ng-star-inserted">...</select> is not clickable at point (1285, 16). Other element would receive the click: <ul _ngcontent-rz-client-c105="" class="header-actions">...</ul>
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: SSD, Brand: Apacer, Product Index 0, Price: 800
+ERROR ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 17:02:51
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: Monitor, Brand: ASUS, Product Index 0, Price: 20000
+ERROR ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 17:04:32
+element click intercepted: Element <select _ngcontent-rz-client-c175="" class="select-css ng-untouched ng-pristine ng-valid ng-star-inserted">...</select> is not clickable at point (1285, 16). Other element would receive the click: <ul _ngcontent-rz-client-c105="" class="header-actions">...</ul>
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: SSD, Brand: Apacer, Product Index 0, Price: 800
+ERROR ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 17:05:51
+stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#2 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: SSD, Brand: Apacer, Product Index 0, Price: 800
+ERROR ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 17:09:56
+element click intercepted: Element <button _ngcontent-rz-client-c104="" type="button" opencart="" class="header__button ng-star-inserted header__button--active">...</button> is not clickable at point (1484, 68). Other element would receive the click: <div _ngcontent-rz-client-c47="" role="button" class="modal__background modal__background_show_animation"></div>
+  (Session info: chrome=102.0.5005.115)UnpackAndThrowOnError
+INFO ParallelWorker#3 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser open ... 
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 'CheckSumInTheCart' test start
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Search Product: SSD, Brand: Apacer, Product Index 0, Price: 800
+ERROR ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - 12.06.2022 17:11:41
+Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')ThrowArgumentOutOfRange_IndexException
+INFO ParallelWorker#1 EPAM_LAb_Rozetka.Tests.CheckSumInTheCartTest - Browser closed ... 

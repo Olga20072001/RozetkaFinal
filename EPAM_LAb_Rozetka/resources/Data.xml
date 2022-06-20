@@ -8,12 +8,6 @@
 			<price>50000</price>
 		</Product>
 		<Product>
-			<searchProduct>USB</searchProduct>
-			<brand>ADATA</brand>
-			<productIndex>0</productIndex>
-			<price>10000</price>
-		</Product>
-		<Product>
 			<searchProduct>SSD</searchProduct>
 			<brand>Apacer</brand>
 			<productIndex>0</productIndex>
@@ -25,12 +19,7 @@
 			<productIndex>0</productIndex>
 			<price>10000</price>		
 		</Product>
-		<Product>
-			<searchProduct>Monitor</searchProduct>
-			<brand>ASUS</brand>
-			<productIndex>0</productIndex>
-			<price>20000</price>		
-		</Product>
+
 	
 </ProductsList>
 </Products>

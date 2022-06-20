@@ -24,7 +24,7 @@ namespace EPAM_LAb_Rozetka.PageObject
 
         public void WaitUntilElementExists(By element)
         {
-            //Thread.Sleep(2000);
+            Thread.Sleep(2000);
             new WebDriverWait(driver, TimeSpan.FromSeconds(timeToWait)).Until(ExpectedConditions.ElementExists(element));
         }
     }
